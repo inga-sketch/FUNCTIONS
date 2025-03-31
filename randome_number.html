@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+        function produce() {
+            return Math.floor(Math.random() * 10) + 1
+        }
+        function transform(n) {
+            return Math.floor(n/2)
+        }
+        function consume() {
+            let number=produce()
+            let total=transform(number)            
+            result.innerHTML=total
+            }
+            consume()
+            console.log(total)
+    </script>
+    
+</body>
+</html>
