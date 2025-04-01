@@ -9,16 +9,18 @@
         function produce() {
             return Math.floor(Math.random() * 10) + 1
         }
+        
         function transform(n) {
-            return Math.floor(n/2)
+            let res= Math.floor(n / 2)
+            return res
         }
+        
         function consume() {
-            let number=produce()
-            let total=transform(number)            
-            result.innerHTML=total
+            let n = produce() 
+            let res = transform(n)          
+            result.innerHTML="Result:"+res
             }
             consume()
-            console.log(total)
     </script>
     
 </body>
